@@ -23,7 +23,7 @@ const Search = () => {
         <MapContainer
             center={[37.7749, -122.4194]}
             zoom={2}
-            style={{ height: "400px", width: "100%" }}
+            style={{ height: "400px", width: "70%" }}
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
