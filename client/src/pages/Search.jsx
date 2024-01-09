@@ -136,7 +136,7 @@ const Search = () => {
                         </select>
                     </div>
                 </div>
-                <Map />
+                <Map height="400px" width="70%" />
                 <div style={{ width: "70%", margin: "100px 0px" }}>
                     <Data chartData={potholeData} />
                 </div>

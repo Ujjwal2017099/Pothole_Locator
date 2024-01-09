@@ -18,12 +18,12 @@ const customIcon = new L.Icon({
     popupAnchor: [0, -32],
 });
 
-const Search = () => {
+const Search = ({height,width}) => {
     return (
         <MapContainer
             center={[37.7749, -122.4194]}
             zoom={2}
-            style={{ height: "400px", width: "70%" }}
+            style={{ height: height, width: width }}
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

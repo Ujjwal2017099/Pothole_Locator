@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
 
-const DB = `mongodb+srv://Ujjwal:4XgZs1WGLyGvjSGn@cluster0.7ucvtkq.mongodb.net/GRID?retryWrites=true&w=majority`;
+const DB = `mongodb+srv://${process.env.DATABASE_NAME}:${process.env.DATABASE_PASSWORD}@aushadhi-aikyam.olipfgx.mongodb.net/Pothole_Locator`;
 mongoose.set("strictQuery", true);
 mongoose
     .connect(DB)
