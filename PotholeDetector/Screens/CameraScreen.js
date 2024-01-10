@@ -4,7 +4,7 @@ import { Camera } from "expo-camera";
 import { Video } from "expo-av";
 import * as MediaLibrary from 'expo-media-library';
 
-export default function CameraScreen() {
+export default function CameraScreen({navigation}) {
   const cameraRef = useRef();
   const [hasCameraPermission, setHasCameraPermission] = useState();
   const [hasMicrophonePermission, setHasMicrophonePermission] = useState();
@@ -62,6 +62,7 @@ export default function CameraScreen() {
   }
 
   if (video) {
+    // console.log(video);
     return (
       <SafeAreaView style={styles.container}>
         <Video
@@ -83,6 +84,10 @@ export default function CameraScreen() {
         <Button
           title={isRecording ? "Stop Recording" : "Record Video"}
           onPress={isRecording ? stopRecording : recordVideo}
+        />
+        <Button
+          title={"Back"}
+          onPress={() => {navigation.navigate("UploadVideo")}}
         />
       </View>
     </Camera>
