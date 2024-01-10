@@ -1,22 +1,18 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { Button, StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { useEffect, useState, useRef } from "react";
 
-import CameraScreen from "./Screens/CameraScreen";
+import { NavigationContainer } from "@react-navigation/native";
+
+import TabNavigator from "./navigators/TabNavigator";
 
 export default function App() {
-  
-
   return (
-    // <CameraScreen />
-    <View style={styles.container}>
-      <Text>HOME SCREEN</Text>
-    </View>
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+
+
