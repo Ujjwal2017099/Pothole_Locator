@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-white{
+    color: #fff;
+}
+.d-flex{
+    display: flex;
+}
+.flex-direction{
+    flex-direction: column;
+}
+.a-center{
+    align-items: center;
+}
+.j-center{
+    justify-content: center;
+}
+.wd-100{
+    width: 100%;
+    height: 400px;
+    filter: blur(5px);
+    filter: brightness(0.4);
+    object-fit: cover;
+    object-position: center;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+.mission-parent{
+    /* border: 1px solid black; */
+    padding: 30px;
+    font-family: 'Rubik';
+}
+.mission{
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+.mission-img{
+    height: 190px;
+    border-radius: 5px;
+}
+.privacy-parent{
+    padding: 60px 150px;
+}
+.td{
+    width: 250px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .wd-100{
+        width: 100%;
+        height: 220px;
+        filter: blur(5px);
+        filter: brightness(0.4);
+        object-fit:cover;
+        object-position: center;
+    }
+
+    .text-overlay{
+        font-size: 12px;
+    }
+
+    .mission-img{
+        /* width: 90%; */
+        /* margin: 20px 0px; */
+        position: absolute;
+        top: 280px;
+        left: 30px;
+    }
+
+    .mobile-mission-div{
+        flex-direction: column;
+        height: 280px;
+    }
+
+    .mission{
+        position: absolute;
+        z-index: 2;
+        height: 100%;
+        top: 10px;
+        left: 5px;   
+    } 
+
+    
+    .privacy-parent {
+        padding: 50px 0px;
+    }
+
+    .td{
+        width: 100px;
+    }
+}

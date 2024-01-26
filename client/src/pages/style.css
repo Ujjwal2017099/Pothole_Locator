@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 113%;
+    left: 50%;
+    transform: translate(-26%);
+    background-color: transparent;
+    color: #c6bfee;
+    border: 0px;
+    font-family: 'Rubik';
+    font-size: 20px;
+}
+
+.stats-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 200px;
+    appearance: none;
+}
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+select:hover {
+    border-color: #007bff;
+}
+select option {
+    background-color: #fff;
+    color: #333;
+}
+
+select option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-backgroud{
+    background: url('../assets/login-background.svg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-login{
+    height: 100vh;
+    width: 45%;
+    background-color: rgba(14, 13, 13, 0.205);
+}
+
+.form-login form { 
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+input {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    display: block;
+    outline: none;
+    width: 300px;
+    height: 30p;
+    top: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    
+}
+
+input[type="text"] , input[type="password"], input[type="email"]{
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+}
+
+/* button{
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #007bff;
+    border-radius: 50px;
+    width: 320px;
+    cursor: pointer;
+} */
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.pothole-background{
+    background-image: url('../assets/PotholeBackground.png');
+    background-repeat: no-repeat;
+        background-size: cover;
+}
+.form-card {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.form-card-input {
+    all: unset;
+}
+
+.form-card-input-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-card-input {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2rem;
+    text-align: start;
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+    margin-bottom: 30px;
+    
+}
+
+.form-card-input-password{
+    all: unset;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .view-pothole{
+        height: 350px;
+        object-fit:cover;
+        margin-top: 50px;
+    }
+
+    .overlay{
+        top: 665px;
+        font-size: 10px;
+    }
+}
