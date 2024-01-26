@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Inference</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <form id="form" method="post" enctype="multipart/form-data" action="/live">
+        <input type="file" name="file"/>
+        <input id="lat" type="hidden" name="lat" />
+        <input id="lon" type="hidden" name="lon" />
+        <input type="button" value="SUBMIT" onclick="handleForm()"/>
+    </form>
+    {% if flash_msg %}
+    <script>
+        function handleForm(event) {
+            const lati = document.getElementById("lat")
+            const long = document.getElementById("lon")
+            function showPosition(position) {
+              console.log(position.coords.latitude, position.coords.longitude)
+              lati.value = position.coords.latitude;
+              long.value = position.coords.longitude;
+              document.getElementById("form").submit();
+            }
+            navigator.geolocation.watchPosition(showPosition);
+        }
+    </script>
+    {% endif %}
+</body>
+</html>
