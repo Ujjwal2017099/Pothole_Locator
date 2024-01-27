@@ -17,8 +17,8 @@ The project aims to develop a robust Pothole Detection System that can analyze v
 2. Clone the project repo on you system by either downloading the code or by using git clone
 3. Run ```npm install``` in the terminal for both client and server directories it will install all the necessary dependencies in your system.
 4. Run ```npm start``` and ```npm run start``` in client and server directories respectively.
-5. Create a ```env``` file in server directory and write **ACCESS_KEY** and **REFRESH_KEY** for jwt token and **DATABASE_NAME** and **DATABASE_PASSWORD** for your mongodb atlas account
-> If you are using mongodb on your local system then replace connection **URI** in `connection.js` inside connection directory in server
+5. Create a ```env``` file in server directory and write **ACCESS_KEY** and **REFRESH_KEY** for jwt token and **DATABASE_NAME** and **DATABASE_PASSWORD** for your mongodb Atlas account
+> If you are using mongodb on your local system then replace connection string **URI** in `connection.js` inside connection directory in server/src
 
 
 ## How does it work
