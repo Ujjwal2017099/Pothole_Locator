@@ -12,7 +12,7 @@ The project aims to develop a robust Pothole Detection System that can analyze v
 - Integration of the Pothole Detection System into existing smart city initiatives for comprehensive urban planning and management.
   
 ## Getting Started
-1. Make sure you have node.js installed on your system.
+1. Make sure you have node.js installed in your system.
  >  If not then you can install it from here [node](https://nodejs.org/en/)
 2. Clone the project repo on you system by either downloading the code or by using git clone
 3. Run ```npm install``` in the terminal for both client and server directories it will install all the necessary dependencies in your system.
